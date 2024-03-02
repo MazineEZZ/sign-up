@@ -28,27 +28,64 @@
       <form id="main-form">
         <div class="first-name">
           <label for="first-name">FIRST NAME</label>
-          <input type="text" name="first-name" id="first-name">
+          <input 
+            type="text" 
+            name="first-name" 
+            title="Enter your first name" 
+            placeholder="John, Smith..."
+            id="first-name">
         </div>
         <div class="last-name">
           <label for="last-name">LAST NAME</label>
-          <input type="text" name="last-name" id="last-name">
+          <input 
+            type="text" 
+            name="last-name" 
+            title="Enter your last name" 
+            placeholder="Kennedy, Whitlock..."
+            id="last-name">
         </div>
         <div class="email">
           <label for="email">EMAIL</label>
-          <input type="email" name="email" required id="email">
+          <input 
+            type="email" 
+            name="email" 
+            required 
+            title="Enter your email (required)" 
+            placeholder="example@gmail.com"
+            id="email">
         </div>
         <div class="phone-number">
           <label for="phone-number">PHONE NUMBER</label>
-          <input type="tel" name="phone-number" required id="phone-number">
+          <input
+            type="tel" 
+            name="phone-number" 
+            required 
+            title="Enter your phone number as: (xxx) xxx-xxxx (required)" 
+            placeholder="(187) 123-0918"
+            pattern="\(\d{3,4}\) \d{3}-\d{4}"
+            id="phone-number">
         </div>
         <div class="password error">
           <label for="password">PASSWORD</label>
-          <input class="invalid" type="password" name="password" required id="password">
+          <input 
+            class="invalid" 
+            type="password" 
+            name="password" 
+            required 
+            title="Enter your password"
+            placeholder="example123"
+            id="password">
         </div>
         <div class="confirm-password">
           <label for="confirm-password">CONFIRM PASSWORD</label>
-          <input class="invalid" type="password" name="confirm-password" required id="confirm-password">
+          <input 
+            class="invalid" 
+            type="password" 
+            name="confirm-password" 
+            required 
+            title="Confirm your password" 
+            placeholder="example123"
+            id="confirm-password">
         </div>
       </form>
     </div>

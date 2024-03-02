@@ -32,6 +32,7 @@ body {
   height: 100vh;
   display: flex;
   justify-content: center;
+  overflow: hidden;
 }
 
 /* Left sidebar */
@@ -120,6 +121,10 @@ button:hover {
 label {
   font-size: 0.7rem;
   font-weight: bold;
+}
+
+div:has(input:required) > label::after {
+  content: " *";
 }
 
 input {
