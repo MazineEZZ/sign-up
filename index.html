@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign up form</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" type="text/javascript" defer></script>
 </head>
 <body>
   <div class="image-sidebar">
@@ -35,19 +36,19 @@
         </div>
         <div class="email">
           <label for="email">EMAIL</label>
-          <input type="email" name="email" id="email">
+          <input type="email" name="email" required id="email">
         </div>
         <div class="phone-number">
           <label for="phone-number">PHONE NUMBER</label>
-          <input type="tel" name="phone-number" id="phone-number">
+          <input type="tel" name="phone-number" required id="phone-number">
         </div>
-        <div class="password">
+        <div class="password error">
           <label for="password">PASSWORD</label>
-          <input type="password" name="password" id="password">
+          <input class="invalid" type="password" name="password" required id="password">
         </div>
         <div class="confirm-password">
           <label for="confirm-password">CONFIRM PASSWORD</label>
-          <input type="password" name="confirm-password" id="confirm-password">
+          <input class="invalid" type="password" name="confirm-password" required id="confirm-password">
         </div>
       </form>
     </div>

@@ -10,11 +10,12 @@
 :root {
   /* Colors */
   --ls-font-color: #fff;
-  --ls-logo-bg-color: #000000a9;
+  --ls-logo-bg-color: #00000089;
   --rs-bg-color: #f9fafb;
-  --rs-btn-color: #596D48;
-  --rs-btn-hover-color: #596D48;
-  --rs-input-border-color: #E5E7EB;
+  --btn-color: #596D48;
+  --btn-hover-color: #596D48;
+  --input-border-color: #E5E7EB;
+  --input-invalid-border-colod: rgb(182, 18, 18);
 
   --box-shadow-color: #888;
   /* Units */
@@ -31,7 +32,6 @@ body {
   height: 100vh;
   display: flex;
   justify-content: center;
-  overflow: hidden;
 }
 
 /* Left sidebar */
@@ -81,7 +81,7 @@ body {
   height: 41vh;
   background-color: white;
   box-shadow: 0 1px 10px 1px var(--box-shadow-color);
-  padding: 0.5rem 2rem;
+  padding: 0.7rem 2rem;
 }
 
 form {
@@ -104,7 +104,7 @@ form div {
 }
 
 button {
-  background-color: var(--rs-btn-color);
+  background-color: var(--btn-color);
   color: white;
   font-weight: bold;
   border: none;
@@ -124,7 +124,7 @@ label {
 
 input {
   padding: 0.3rem;
-  border: 1px solid  var(--rs-input-border-color);
+  border: 1px solid  var(--input-border-color);
   font-size: 1rem;
   width: 300px;
   border-radius: 0.2rem;
@@ -135,8 +135,18 @@ input:focus {
   outline: none;
 }
 
+.invalid {
+  border: 1px solid var(--input-invalid-border-colod);
+}
+
+.error::after {
+  content: "* Passwords do not match";
+  font-size: 0.8rem;
+  color: var(--input-invalid-border-colod);
+}
+
 a {
-  color: var(--rs-btn-color);
+  color: var(--btn-color);
   font-weight: bold;
   text-decoration: none;
 }
